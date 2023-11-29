@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserForm = () => {
   return (
-    <div>UserForm</div>
+    <h2>UserForm</h2>
   )
 }
 
