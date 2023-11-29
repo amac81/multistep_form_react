@@ -32,8 +32,7 @@ function App() {
         <p>Etapas</p>
         <form onSubmit = {(e)=>changeStep(currentStep +1, e)}>
           <div className="inputs-container">{currentComponent}</div>
-          <div className="actions">
-            
+          <div className="actions">     
             {!isFirstStep && (
             <button type="button" onClick={()=>changeStep(currentStep - 1)}>
               <GrFormPrevious/>

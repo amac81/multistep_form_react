@@ -12,6 +12,7 @@
 .header h2{
   font-size: 2.5rem;
   margin-bottom: 1.1rem;
+  color: #03b8b8;  
 } 
 
 /* Forms */
@@ -21,13 +22,71 @@
   margin: 0 auto;
   background-color: #fefefe;
   padding: 1.5rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
 }
 
 .form-container form {
   min-width: 450px;
+  margin: 0 auto;
 }
 
 .inputs-container {
   min-height: 275px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-weight: bold;
+  color: #778;
+  font-size: 1.5rem;
+}
+
+input, 
+textarea {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 3px;
+  box-shadow: rgba(98, 98, 97, 0.2) 0px 7px 29px 0px;
+  font-size: 1.1rem;
+  color: #778;
+}
+
+input::placeholder {
+  color:#0bb8b8cc;
+}
+
+/*Botões*/
+
+button {
+  border: none;
+  border: 2px solid #03b8b8;
+  background-color: #03b8b8;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-left: 10px;  
+  opacity: 0.9;
+  transition: 0.5s;
+ 
+}
+
+button:hover {
+  opacity: 1;
+  transition: 0.5s; 
+  border: 2px solid #91b803;
+  background-color: #91b803;
+}
+
+button span{ 
+  color:#fefefe;
+}
+
+
+.actions {
+  text-align: right;    
 }
