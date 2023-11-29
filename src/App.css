@@ -57,36 +57,45 @@ textarea {
   color: #778;
 }
 
+textarea {
+ height: 125px;
+}
+
 input::placeholder {
   color:#0bb8b8cc;
 }
 
 /*Botões*/
 
-button {
+.actions {
+  display: flex;
+  justify-content: flex-end;   
+  gap: 0.5rem;
+}
+
+.actions button {
   border: none;
   border: 2px solid #03b8b8;
   background-color: #03b8b8;
   font-size: 1.2rem;
-  padding: 0.5rem;
-  margin-left: 10px;  
+  padding: 0.5rem 1rem; 
   opacity: 0.9;
   transition: 0.5s;
- 
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
 }
 
-button:hover {
+.actions button:hover {
   opacity: 1;
   transition: 0.5s; 
   border: 2px solid #91b803;
   background-color: #91b803;
 }
 
-button span{ 
+.actions button span{ 
   color:#fefefe;
 }
 
 
-.actions {
-  text-align: right;    
-}
