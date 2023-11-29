@@ -3,6 +3,7 @@ import React from 'react'
 const UserForm = () => {
   return (
     <div className="form-control">
+      <div className="form-input">
         <label htmlFor="name">Nome:</label>
         <input 
             type="text" 
@@ -11,6 +12,8 @@ const UserForm = () => {
             placeholder='Digite o seu nome'
             required
         />
+      </div>
+      <div className="form-input">
         <label htmlFor="email">Email:</label>
         <input 
             type="email" 
@@ -23,6 +26,7 @@ const UserForm = () => {
             placeholder='Digite o seu email'
             required
         />
+      </div>
     </div>
   )
 }
