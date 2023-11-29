@@ -23,35 +23,37 @@ function App() {
   
   return (
     <div className="app">
+      <div className="header">
         <h2>Avalie a sua compra</h2>
         <p>Agradecemos a sua compra e confiança em nós depositada! </p>
         <p>Utilize o formulário abaixo para avaliar a sua experiência.</p>
-        <div className="form-container">
-          <p>Etapas</p>
-          <form onSubmit = {(e)=>changeStep(currentStep +1, e)}>
-            <div className="inputs-container">{currentComponent}</div>
-            <div className="actions">
-              
-              {!isFirstStep && (
-              <button type="button" onClick={()=>changeStep(currentStep - 1)}>
-                <GrFormPrevious/>
-                <span>Voltar</span>
-              </button>
-              )}
-              {!isLastStep ? (
-                <button type="submit">
-                <span>Avançar</span>
-                <GrFormNext/>
-              </button>
-              ) : (
-              <button type="button">
-              <span>Enviar</span>
-              <FiSend/>
+      </div>
+      <div className="form-container">
+        <p>Etapas</p>
+        <form onSubmit = {(e)=>changeStep(currentStep +1, e)}>
+          <div className="inputs-container">{currentComponent}</div>
+          <div className="actions">
+            
+            {!isFirstStep && (
+            <button type="button" onClick={()=>changeStep(currentStep - 1)}>
+              <GrFormPrevious/>
+              <span>Voltar</span>
             </button>
-            )}              
-            </div>
-          </form>
-        </div>
+            )}
+            {!isLastStep ? (
+              <button type="submit">
+              <span>Avançar</span>
+              <GrFormNext/>
+            </button>
+            ) : (
+            <button type="button">
+            <span>Enviar</span>
+            <FiSend/>
+          </button>
+          )}              
+          </div>
+        </form>
+      </div>
     </div>
   )
 }
