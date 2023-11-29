@@ -1,0 +1,47 @@
+.steps {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.steps::after {
+    content: "";
+    width: 420px;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: 20px;
+}
+
+.step {
+    text-align: center;
+    background-color: #fefefe;
+    z-index: 1;
+    width: 120px;
+    padding: 0.3rem;
+}
+
+.step svg {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.active {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.active > svg{ 
+    fill: #03b8b8;
+    font-size: 1.9rem;
+}
+
+.fi-send-ico > svg{ 
+    stroke: #03b8b8; 
+    fill: none;
+    stroke-width: 1.8;
+}

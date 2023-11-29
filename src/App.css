@@ -98,4 +98,11 @@ input::placeholder {
   color:#fefefe;
 }
 
+.actions button svg 
+{ 
+  color: #fefefe;
+  stroke: #fefefe;
+}
+
+
 
