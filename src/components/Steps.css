@@ -1,12 +1,11 @@
 .steps {
     display: flex;
-    gap: 4rem;
+    gap: 5rem;
     justify-content: center;
     align-items: center;
     max-width: 450px;
     margin: 0 auto;
-    position: relative;
-    
+    position: relative;    
 }
 
 .steps::after {

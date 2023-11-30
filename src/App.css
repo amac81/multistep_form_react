@@ -18,17 +18,16 @@
 /* Forms */
 
 .form-container {
-  max-width: 610px;
+  max-width: 540px;
   margin: 0 auto;
   background-color: #fefefe;
-  padding: 1.5rem;
+  padding: 2.5rem;
   box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
 }
 
 .form-container form {
-  min-width: 420px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .inputs-container {
@@ -52,6 +51,7 @@ label {
   font-weight: bold;
   color: #778;
   font-size: 1rem;
+  margin-bottom: .5rem;
 }
 
 input, 
