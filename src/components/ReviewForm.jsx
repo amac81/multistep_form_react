@@ -7,7 +7,7 @@ import {
 } from "react-icons/bs";
 
 
-const ReviewForm = () => {
+const ReviewForm = ({data}) => {
   return (
     <div className="review-form">
       <div className="form-control score-container">
