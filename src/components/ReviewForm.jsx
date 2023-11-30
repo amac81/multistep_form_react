@@ -35,9 +35,8 @@ const ReviewForm = () => {
         </label>    
       </div>
       <div className="form-control">
-        <label htmlFor="comment">
-          <textarea name="comment" id="comment" placeholder="Diga-nos como foi a sua experiência" required></textarea>
-        </label>
+        <label htmlFor="comment">Comentário:</label>
+        <textarea name="comment" id="comment" placeholder="Diga-nos como foi a sua experiência" required></textarea>        
       </div>
     </div>
   );
