@@ -1,10 +1,46 @@
 
-import React from 'react'
+import React from 'react';
+import "./ReviewForm.css";
+import {
+  BsFillEmojiHeartEyesFill,
+  BsFillEmojiSmileFill,
+  BsFillEmojiNeutralFill,
+  BsFillEmojiFrownFill,
+} from "react-icons/bs";
+
 
 const ReviewForm = () => {
   return (
-    <h2>ReviewForm</h2>
-  )
-}
+    <div className="review-form">
+      <div className="form-control score-container">
+        <label className="radio-container">
+          <input type="radio" name="review" required value="unsatisfied"/>
+          <BsFillEmojiFrownFill/>
+          <p>Insatisfeito</p>
+        </label>
+        <label className="radio-container">
+          <input type="radio" name="review" required value="neutral"/>
+          <BsFillEmojiNeutralFill/>
+          <p>Poderia ser melhor</p>
+        </label>
+        <label className="radio-container">
+          <input type="radio" name="review" required value="satisfied"/>
+          <BsFillEmojiSmileFill/>
+          <p>Satisfeito</p>
+        </label>
+        <label className="radio-container">
+          <input type="radio" name="review" required value="very_satisfied"/>
+          <BsFillEmojiHeartEyesFill/>
+          <p>Muito Satisfeito</p>
+        </label>    
+      </div>
+      <div className="form-control">
+        <label htmlFor="comment">
+          <textarea name="comment" id="comment" placeholder="Diga-nos como foi a sua experiência"></textarea>
+        </label>
+      </div>
+    </div>
+  );
+};
 
 export default ReviewForm
