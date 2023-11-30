@@ -9,7 +9,7 @@
 }
 
 .thanks-container p{
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
     font-size: 0.93rem;
 }
 
@@ -19,12 +19,29 @@
 
 .review-data {
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .review-data svg{
     margin-left: 5px;
+    margin-top: 8px;
+    font-size: 2.5em;
+    fill: #03b8b8;
 }
 
 .review-data span{
     font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.comments-container{
+    text-align: left; 
+    word-wrap: break-word; 
+}
+
+.comments-container p { 
+    font-size: 0.95rem;
+    
+    
 }
